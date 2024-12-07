@@ -53,7 +53,6 @@ export async function POST(req: Request) {
       const hashedPassword = await bcrypt.hash(password, 10);
       const expiryDate = new Date();
       expiryDate.setMinutes(expiryDate.getMinutes() + 60);
-
       let newUser = new UserModel({
         username,
         password: hashedPassword,
