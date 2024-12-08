@@ -17,7 +17,6 @@ const MessageSchema: Schema<Message> = new Schema({
     }
 })
 
-
 export interface User extends Document {
     username: string;
     password: string;
@@ -65,10 +64,5 @@ const UserSchema: Schema<User> = new Schema({
     messages: [MessageSchema]
 
 })
-
 const UserModel = (mongoose.models.User as mongoose.Model<User>) || mongoose.model<User>("User", UserSchema)
-
 export default UserModel
-
-
-//  yaha par mongoose .model.User ad mongoose.Model<User> likha hai qkii hum chhaite hai kii mongoose.models.User ka  return type jo rahe vo mongoose.Model<User> ka ho 
