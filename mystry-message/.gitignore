@@ -42,3 +42,4 @@ next-env.d.ts
 
 # MONGODB_URI=mongodb://localhost:27017/mystry-message
 # RESEND_API_KEY=re_WJteKwSG_CmEa59LEWo2NFBX1bCowVZ4M
+# NEXTAUTH_SECRET
