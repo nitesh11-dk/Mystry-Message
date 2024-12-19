@@ -9,7 +9,7 @@ export async function POST(req:Request){
 
         const decodedVerifyCode = decodeURIComponent(body.verifyCode)
         
-        // Validate the verifyCode using the schema
+
         const result = verifySchema.safeParse({ verifyCode: decodedVerifyCode })
         if (!result.success) {
             return Response.json({
